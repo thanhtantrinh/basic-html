@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery.browser/dist/jquery.browser.js"></script>
+    <title>Demo jQuery Browser</title>
+</head>
+<body>
+    <h1>Demo jQuery Browser</h1>
+    <p></p>
+    <script>
+        jQuery.each( jQuery.browser, function( i, val ) {
+            $( "<div>" + i + " : <span>" + val + "</span>" )
+            .appendTo( document.body );
+        });
+        $(function(){
+            $( "p" ).html( "The version # of the browser's rendering engine is: <span>" +
+  $.browser.version + "</span>" );
+
+        });
+    </script>
+</body>
+</html>

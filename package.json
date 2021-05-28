@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/thanhtantrinh/basic-html#readme",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery.browser": "0.0.7"
   }
 }
